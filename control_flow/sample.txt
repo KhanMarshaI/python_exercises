@@ -1,0 +1,7 @@
+This is a filled line
+The next line is going to be empty
+
+The next line will also be empty
+
+The next line will stop the program execution
+STOP

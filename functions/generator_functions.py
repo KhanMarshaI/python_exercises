@@ -9,3 +9,25 @@ def read_file(file_name):
         for line in file:
             yield line
 
+def stripper(line_generator):
+    for line in line_generator:
+        yield line.strip()
+
+def filterer(line_generator):
+    for line in line_generator:
+        if line:
+            yield line
+
+def line_number_and_text(line_generator):
+    n=0
+    for line in line_generator:
+        n+=1
+        yield (n, line)
+
+raw = read_file("sample.txt")
+whitespace = stripper(raw)
+filtered = filterer(whitespace)
+output = line_number_and_text(filtered)
+
+for item in output:
+    print(item)

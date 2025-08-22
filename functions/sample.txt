@@ -1,0 +1,12 @@
+This is a line
+
+previous line was empty
+this won't be empty
+but the next 3 will be
+
+
+
+and now
+
+the end
+
